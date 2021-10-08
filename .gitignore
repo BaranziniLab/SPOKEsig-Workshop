@@ -2,5 +2,7 @@ venv/
 data/breast_colon_ibd_measurements_w_ab.csv
 data/breast_colon_ibd_conditions.csv
 data/breast_colon_ibd_drugs.csv
+data/random_patient_info.tsv
+data/random_patient_spokesigs.npy
 code/.ipynb_checkpoints
 
