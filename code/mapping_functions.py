@@ -54,3 +54,32 @@ def add_diseases_to_patient_info(disease_list, all_rdb_db, patient_info_df, node
     patient_info_df.loc[:,'Disease'] = patient_info_df.SPOKE_ID.map(dict(zip(disease_list, disease_names)))
     return patient_info_df
 
+def load_or_make_spokesig_mean_std_dist(node_info_df, example_cohort, diseases, disease_names, data_path, load_data=True):
+    mean_sig_file = os.path.join(data_path, 'mean_sig.npy')
+    std_sig_file = os.path.join(data_path, 'std_sig.npy')
+    patient_to_disease_dist_file = os.path.join(data_path, 'patient_to_disease_dist.npy')
+    if load_data == False:
+        # load spoke sigs
+        spoke_sigs = np.load(int_spoke_sig_filename, allow_pickle=False)
+        mean_sig = np.mean(spoke_sigs, axis=0)
+        # get mean of SPOKEsigs
+        np.save(mean_sig_file, mean_sig, allow_pickle=False)
+        # get std of SPOKEsigs
+        std_sig = np.std(spoke_sigs, axis=0)
+        np.save(std_sig_file, std_sig, allow_pickle=False)
+        # convert to z score (saving mean and std)
+        spoke_sigs = np.nan_to_num((spoke_sigs-mean_sig)/std_sig)
+        # create distance matrix
+        patient_to_disease_dist = cdist(spoke_sigs, psev_matrix, metric='cosine')
+        np.save(patient_to_disease_dist_file, patient_to_disease_dist, allow_pickle=False)
+        # mean node value per disease
+        mean_node_val_df = node_info_df.drop_duplicates()
+        for disease, name in zip(diseases, disease_names):
+            mean_node_val_df.loc[:,name] = np.mean(spoke_sigs[example_cohort[example_cohort.Disease==disease].Patient_Index.values], axis=0)
+        del spoke_sigs
+        mean_node_val_df.to_csv('mean_node_val_df.tsv', sep='\t', header=True, index=False)
+    else:
+        mean_sig = np.load(mean_sig_file, allow_pickle=False)
+        std_sig = np.load(std_sig_file, allow_pickle=False)
+        patient_to_disease_dist = np.load(patient_to_disease_dist_file, allow_pickle=False)
+    return mean_sig, std_sig, patient_to_disease_dist
