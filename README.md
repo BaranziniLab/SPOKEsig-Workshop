@@ -1,7 +1,7 @@
 # SPOKEsig-Workshop
 
 
-Objective of this workshop are as follows:
+Objectives of this workshop are as follows:
 
 
 **1. To demonstrate how to fetch clinical EHR data using Patient Explorer**
