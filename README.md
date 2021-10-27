@@ -10,4 +10,4 @@ Objective of this workshop are as follows:
 **2. To demonstrate the usage of REST API to fetch SPOKEsig embedding vectors corresponding to the above EHR data** 
 
 
-**3. To demonstrate the usage of SPOKEsig vectors on a machine learning model to classify the patient population in the EHR data**
+**3. To demonstrate the usage of SPOKEsig vectors using a machine learning model to classify the patient population in the EHR data**
