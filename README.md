@@ -37,3 +37,25 @@ git clone https://github.com/BaranziniLab/SPOKEsig-Workshop.git
 
 
 4. Check if a folder named "SPOKEsig-Workshop" is created. If yes, Step 1 is completed
+
+
+## Step 2: Create a virtual environment
+
+
+### For Linux/MacOS users
+
+
+1. In the terminal, open the "SPOKEsig-Workshop" folder that you just cloned. You can copy-paste the following:
+
+
+```
+cd SPOKEsig-Workshop
+```
+
+
+2. Once you are inside the folder, let us create a virtual environment. For that, copy-paste the following:
+
+
+```
+virtualenv -p $(which python3) venv
+```
