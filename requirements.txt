@@ -54,7 +54,6 @@ prompt-toolkit==3.0.20
 ptyprocess==0.7.0
 pycparser==2.20
 Pygments==2.10.0
-pymssql==2.2.2
 pyparsing==2.4.7
 pyrsistent==0.18.0
 python-dateutil==2.8.2
@@ -136,7 +135,6 @@ prompt-toolkit==3.0.20
 ptyprocess==0.7.0
 pycparser==2.20
 Pygments==2.10.0
-pymssql==2.2.2
 pyparsing==2.4.7
 pyrsistent==0.18.0
 python-dateutil==2.8.2
