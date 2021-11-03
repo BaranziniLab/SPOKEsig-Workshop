@@ -13,6 +13,8 @@ Objectives of this workshop are as follows:
 **3. To demonstrate the usage of SPOKEsig vectors in classifying patient population using a machine learning model**
 
 
+&nbsp;
+
 
 Follow the steps described below to follow the workshop
 
@@ -20,7 +22,33 @@ Follow the steps described below to follow the workshop
 ## Step 0: Check if python is installed in your local machine
 
 
-First, make sure you have installed python3 into your local machine. If you haven't, please download it from [here](https://www.python.org/downloads/). We recommend you to install python version of atleast 3.6 
+Some modules used in this workshop insist to use Python 3.6.x version. Hence, first make sure you have installed Python3.6.x into your local machine. For that:
+
+
+1. Open terminal (for Linux/MacOS) or Open Command Prompt (for Windows)
+
+
+2. Type the following:
+
+
+
+```
+python --version
+```
+
+
+or
+
+
+```
+python3 --version
+```
+
+
+If you see something like **Python 3.6.x** then you are good to go. Otherwise, please download Python3.6.x from [here](https://www.python.org/downloads/release/python-368/). For Windows users, when you open this link, use "Windows x86-64 executable installer" to install Python 3.6.8 in your local machine.
+
+
+&nbsp;
 
 
 ## Step 1: Clone this repo to your local machine
@@ -46,7 +74,26 @@ git clone https://github.com/BaranziniLab/SPOKEsig-Workshop.git
 4. Check if a folder named "SPOKEsig-Workshop" is created. If yes, Step 1 is completed
 
 
-## Step 2: Create a virtual environment
+&nbsp;
+
+
+## Step 2: Create a virtual environment, activate it and install python modules
+
+
+First, check if virtualenv is installed in your local machine. For that, type the following:
+
+
+```
+virtualenv --version
+```
+
+
+If you see a version number on your screen, then you are good to go. Otherwise, type the following:
+
+
+```
+pip install virtualenv 
+```
 
 
 ### For Linux/MacOS users
@@ -65,4 +112,62 @@ cd SPOKEsig-Workshop
 
 ```
 virtualenv -p $(which python3) venv
+```
+
+
+3. Activate the created virtual environment. For that, copy-paste the following:
+
+
+```
+source venv/bin/activate
+```
+
+
+
+4. To install the required python modules for this workshop, copy-paste the following:
+
+
+```
+pip install -r requirements.txt 
+```
+
+
+### For Windows users
+
+
+1. In the cmd, open "SPOKEsig-Workshop" folder that you just cloned. You can copy-paste the following:
+
+
+```
+cd SPOKEsig-Workshop
+```
+
+
+2. Once you are inside the folder, let us create a virtual environment. 
+
+
+For that, use the following syntax (NB: DO NOT COPY PASTE). Change "\path\to\python.exe" to the path of python in your local machine. 
+
+
+Usually path would be like (assuming you are using Python 3.6.x) "C:\Users\<user_name>\AppData\Local\Programs\Python\Python36\python.exe"
+
+
+```
+virtualenv --python "\path\to\python.exe" venv
+``` 
+
+
+3. Activate the created virtual environment. For that, copy-paste the following:
+
+
+```
+.\venv\Scripts\activate
+```
+
+
+4. To install the required python modules for this workshop, copy-paste the following:
+
+
+```
+pip install -r requirements.txt
 ```
