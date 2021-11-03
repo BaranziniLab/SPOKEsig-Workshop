@@ -44,8 +44,16 @@ or
 python3 --version
 ```
 
+**For Linux/MacOS users**
 
-If you see something like **Python 3.6.x** then you are good to go. Otherwise, please download Python3.6.x from [here](https://www.python.org/downloads/release/python-368/). For Windows users, when you open this link, use "Windows x86-64 executable installer" to install Python 3.6.8 in your local machine.
+
+If you see something like **Python 3.x.x** then you are good to go. Otherwise, please download Python3 from [here](https://www.python.org/downloads/release/python-368/). 
+
+
+**For Windows users**
+
+
+If you see something like **Python 3.6.x** then you are good to go. Otherwise, please download Python3.6 from [here](https://www.python.org/downloads/release/python-368/). When you open this link, use "Windows x86-64 executable installer" to install Python 3.6.8 in your local machine.
 
 
 &nbsp;
