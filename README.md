@@ -19,16 +19,19 @@ Objectives of this workshop are as follows:
 Follow the steps described below to follow the workshop
 
 
-## Step 0: Check if python is installed in your local machine
+## Step 0: Check if python is installed into your local machine
 
 
-Some modules used in this workshop insist to use Python 3.6.x version. Hence, first make sure you have installed Python3.6.x into your local machine. For that:
+Let us first make sure you have installed Python3 into your local machine. For that:
 
 
 1. Open terminal (for Linux/MacOS) or Open Command Prompt (for Windows)
 
 
-2. Type the following:
+2. Copy-paste the following 
+ 
+ 
+(Note: you can copy the following by clicking an icon that pops up at the right end of the line):
 
 
 
@@ -44,16 +47,18 @@ or
 python3 --version
 ```
 
+
 **For Linux/MacOS users**
 
 
-If you see something like **Python 3.x.x** then you are good to go. Otherwise, please download Python3 from [here](https://www.python.org/downloads/release/python-368/). 
+If you see something like **Python 3.x.x** on your screen, then you are good to go. Otherwise, please download Python3 from [here](https://www.python.org/downloads/release/python-368/). 
 
 
 **For Windows users**
 
 
-If you see something like **Python 3.6.x** then you are good to go. Otherwise, please download Python3.6 from [here](https://www.python.org/downloads/release/python-368/). When you open this link, use "Windows x86-64 executable installer" to install Python 3.6.8 in your local machine.
+If you see something like **Python 3.6.x** on your screen, then you are good to go. Otherwise, please download Python3.6 from [here](https://www.python.org/downloads/release/python-368/). When you open this link, use "Windows x86-64 executable installer" to install Python 3.6.8 into your local machine.
+
 
 
 &nbsp;
@@ -67,8 +72,6 @@ If you see something like **Python 3.6.x** then you are good to go. Otherwise, p
 
 2. On the command line, copy and paste the following 
 
-
-(Note: you can copy the following by clicking an icon that pops at the right end of the line)
 
 
 ```
