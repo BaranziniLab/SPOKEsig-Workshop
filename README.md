@@ -160,7 +160,7 @@ cd SPOKEsig-Workshop
 For that, use the following syntax (NB: DO NOT COPY PASTE). Change "\path\to\python.exe" to the path of python in your local machine. 
 
 
-Usually path would be like (assuming you are using Python 3.6.x) "C:\Users\<user_name>\AppData\Local\Programs\Python\Python36\python.exe"
+Usually path would be like (assuming you are using Python 3.6.x) "C:\Users\\<user_name>\AppData\Local\Programs\Python\Python36\python.exe"
 
 
 ```
