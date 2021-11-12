@@ -185,3 +185,21 @@ virtualenv --python "\path\to\python.exe" venv
 ```
 pip install -r requirements.txt
 ```
+
+
+&nbsp;
+
+
+## Step 3: Add API credentials to config file
+
+
+Next, we need to add API credentials to **workshop.conf** file  
+
+
+1. Open the file **workshop.conf** in **SPOKEsig-Workshop** directory
+
+
+2. Change **&lt;API USERNAME&gt;** and **&lt;API PASSWORD&gt;** in the **[API]** section of the config file to username and password provided to you
+
+
+3. Save the config file
