@@ -190,10 +190,48 @@ pip install -r requirements.txt
 &nbsp;
 
 
-## Step 3: Add API credentials to config file
+## Step 3: Spin up a Jupyter notebook instance in your local machine
 
 
-Next, we need to add API credentials to **workshop.conf** file  
+In this workshop, we will run all codes in Jupyter notebook. Hence, type the following in your terminal(for Linux/MacOS)/CMD(for Windows) to start Jupyter notebook:
+
+
+```
+jupyter-notebook
+```
+
+
+This will spin up a jupyter notebook instance in your local machine. This notebook will appear in your browser
+
+
+To use this instance, you will be prompted to enter a token. To get the token, check your terminal(for Linux/MacOS)/CMD(for Windows)
+
+
+Once you furnish the token, you can see the contents of **SPOKEsig-Workshop** directory in your browser
+
+
+**Note:** 
+
+
+**If the notebook doesn't start automatically in your browser, copy and paste the link that appears on your terminal(for Linux/MacOS)/CMD(for Windows), The link will look like the following:**
+
+
+***http\://localhost:8888/?token=***
+
+
+Congratulations, you have successfully started Jupyter notebook in your local machine! 
+
+
+Now, let us start running codes.
+
+
+&nbsp;
+
+
+## Step 4: Add API credentials to config file
+
+
+For successfully running codes, we need to first add API credentials to **workshop.conf** file  
 
 
 1. Open the file **workshop.conf** in **SPOKEsig-Workshop** directory
