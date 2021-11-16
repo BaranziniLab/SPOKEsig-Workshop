@@ -219,7 +219,7 @@ Once you furnish the token, you can see the contents of **SPOKEsig-Workshop** di
 ***http\://localhost:8888/?token=***
 
 
-Congratulations, you have successfully started Jupyter notebook in your local machine! 
+Congratulations! you have successfully started Jupyter notebook in your local machine! 
 
 
 Now, let us start running codes.
@@ -258,7 +258,7 @@ In this step, we will create SPOKE signatures (a.k.a. SPOKEsigs) of patients usi
 Once the data is imported to your local machine, then:
 
 
-1. You must have downloaded three csv files to your local machine such as a condition file, a medication file and a measurement file. 
+1. You must have downloaded three csv files from PatientExplorer to your local machine such as a condition file, a medication file and a measurement file. As you might have noticed, these data correspond to three diseases such as breast_cancer, colon_cancer and irritable_bowel_syndrome. 
 
 
 Rename these files as:
@@ -280,3 +280,44 @@ measurement csv file --> ***breast_colon_ibd_measurements_w_ab.csv***
 
 
 4. Open the notebook named **get_patient_spoke_sig_using_patient_explorer_and_API.ipynb**
+
+
+5. As the name indicates, this notebook is used to create SPOKEsigs of patients that is imported from PatientExplorer. Notebook is well commented and hence, you can see that SPOKEsigs are obtained by making API calls whose credentials are saved at [Step 4](https://github.com/BaranziniLab/SPOKEsig-Workshop#step-4-add-api-credentials-to-config-file). 
+
+
+6. Once you run all sections of this notebook, it saves three files to **/data** folder. Files are such as: a SPOKEsig numpy file (named **random_patient_spokesigs.npy**) and two flat files that provide information on patients (**random_patient_info.tsv** and **example_cohort.tsv**)  
+
+
+Congratulations! You have now successfully created and saved SPOKEsigs of patients from PatientExplorer.
+
+
+&nbsp;
+
+
+## Step 6: Let us use the created SPOKEsigs on a machine learning model
+
+
+Now we created SPOKEsigs of patients coming from three different disease categories such as breast_cancer, colon_cancer and irritable_bowel_syndrome.
+
+
+Let us see if a machine learning model can make use of these SPOKEsigs and classify patients into these three different disease categories.
+
+
+1. Open the notebook named **patient_spoke_sig_analysis.ipynb**
+
+
+2. This notebook is also well commented. However, unlike previous notebook, this one has allocated some sections for you to fill. 
+
+
+Don't worry! Useful links are provided at relevant sections for you to refer and fill out.  
+If you still cannot figure out, you can always go to the [wiki](https://github.com/BaranziniLab/SPOKEsig-Workshop/wiki/Missing-code-snippets#find-the-missing-piece-of-code-from-here) section of this repo and see the missing portions of the code from there.
+
+
+3. Once you run all sections of this notebook, you can see the performance of a machine learning model (random forest classifier) in classifying patient data into three disease categories using SPOKEsigs as its input.
+
+
+
+&nbsp;
+
+**Congratulations! You have successfully completed the hands-on session of this workshop.**
+
