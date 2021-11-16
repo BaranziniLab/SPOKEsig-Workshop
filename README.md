@@ -258,7 +258,7 @@ In this step, we will create SPOKE signatures (a.k.a. SPOKEsigs) of patients usi
 Once the data is imported to your local machine, then:
 
 
-a. You must have downloaded three csv files to your local machine such as a condition file, a medication file and a measurement file. 
+1. You must have downloaded three csv files to your local machine such as a condition file, a medication file and a measurement file. 
 
 
 Rename these files as:
@@ -273,10 +273,10 @@ medication csv file --> ***breast_colon_ibd_drugs.csv***
 measurement csv file --> ***breast_colon_ibd_measurements_w_ab.csv***
 
 
-b. Copy these renamed files to the folder **/data** in **SPOKEsig-Workshop** directory 
+2. Copy these renamed files to the folder **/data** in **SPOKEsig-Workshop** directory 
 
 
-c. Open the folder **/code** in **SPOKEsig-Workshop** directory 
+3. Open the folder **/code** in **SPOKEsig-Workshop** directory 
 
 
-d. Open the notebook named **get_patient_spoke_sig_using_patient_explorer_and_API.ipynb**
+4. Open the notebook named **get_patient_spoke_sig_using_patient_explorer_and_API.ipynb**
