@@ -241,3 +241,42 @@ For successfully running codes, we need to first add API credentials to **worksh
 
 
 3. Save the config file
+
+
+&nbsp;
+
+
+## Step 5: Create patient SPOKEsigs 
+
+
+In this step, we will create SPOKE signatures (a.k.a. SPOKEsigs) of patients using their clinical EHR data. For this, we make use of **PatientExplorer** to import clinical data of patients. 
+
+
+***Please follow instructions in the presentation to know how to import clinical data from PatientExplorer***
+
+
+Once the data is imported to your local machine, then:
+
+
+a. You must have downloaded three csv files to your local machine such as a condition file, a medication file and a measurement file. 
+
+
+Rename these files as:
+
+
+condition csv file --> ***breast_colon_ibd_conditions.csv***
+
+
+medication csv file --> ***breast_colon_ibd_drugs.csv***
+
+
+measurement csv file --> ***breast_colon_ibd_measurements_w_ab.csv***
+
+
+b. Copy these renamed files to the folder **/data** in **SPOKEsig-Workshop** directory 
+
+
+c. Open the folder **/code** in **SPOKEsig-Workshop** directory 
+
+
+d. Open the notebook named **get_patient_spoke_sig_using_patient_explorer_and_API.ipynb**
