@@ -48,17 +48,13 @@ python3 --version
 ```
 
 
-**For Linux/MacOS users**
+If you see **Python 3.x.x** you should be good to go. 
 
 
-If you see something like **Python 3.x.x** on your screen, then you are good to go. Otherwise, please download Python3 from [here](https://www.python.org/downloads/release/python-368/). 
+***Note: We have tested and verified that all codes in this repo will work on Python 3.6.x, Python 3.7.x and Python 3.8.x*** 
 
 
-**For Windows users**
-
-
-If you see something like **Python 3.6.x** on your screen, then you are good to go. Otherwise, please download Python3.6 from [here](https://www.python.org/downloads/release/python-368/). When you open this link, use "Windows x86-64 executable installer" to install Python 3.6.8 into your local machine.
-
+If Python3 is not installed in your machine, please install one of the above mentioned versions of Python3 before proceeding further.
 
 
 &nbsp;
@@ -157,18 +153,21 @@ cd SPOKEsig-Workshop
 2. Once you are inside the folder, let us create a virtual environment. 
 
 
-For that, use the following syntax (NB: DO NOT COPY PASTE). Change "\path\to\python.exe" to the path of python in your local machine. 
+For that, use the following syntax (**NB: DO NOT COPY PASTE**). 
+
+
+```
+virtualenv --python "\path\to\python.exe" venv
+```
+
+
+Change **"\path\to\python.exe"** to the path of python in your local machine. 
 
 
 Usually path would be like (assuming you are using Python 3.6.x): 
 
 
 **C:\Users\\<user_name>\AppData\Local\Programs\Python\Python36\python.exe**
-
-
-```
-virtualenv --python "\path\to\python.exe" venv
-``` 
 
 
 3. Activate the created virtual environment. For that, copy-paste the following:
@@ -247,6 +246,9 @@ For successfully running codes, we need to first add API credentials to **worksh
 
 
 ## Step 5: Create patient SPOKEsigs 
+
+
+From this step onwards, you need to connect your UCSF VPN. 
 
 
 In this step, we will create SPOKE signatures (a.k.a. SPOKEsigs) of patients using their clinical EHR data. For this, we make use of **PatientExplorer** to import clinical data of patients. 
